@@ -1,0 +1,22 @@
+{
+  "name": "oop_challenge",
+  "version": "8.2.4",
+  "description": "our challenge is to build a Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xMaedayx/HumanCollab.git"
+  },
+  "keywords": [
+    "Teamwork"
+  ],
+  "author": "Meghan O'Brien",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xMaedayx/HumanCollab/issues"
+  },
+  "homepage": "https://github.com/xMaedayx/HumanCollab#readme"
+}
