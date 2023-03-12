@@ -1,0 +1,15 @@
+{
+  "name": "humancollab",
+  "version": "8.2.4",
+  "description": "A company applicationt to geneator profiles of team members onto a clean page",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "xmaedayx"
+  },
+  "author": "Meghan O'Brien",
+  "license": "MIT"
+}
