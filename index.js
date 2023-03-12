@@ -46,7 +46,7 @@ const manage = () => {
 
     .then(manager => {
     const {name,id,email,office} = manager
-    const TheManager = new Manager (name, id, email , office)
+    const TheManager = new manager (name, id, email , office)
     team.push(TheManager);
     console.log(TheManager);
 })

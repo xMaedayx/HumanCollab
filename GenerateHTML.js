@@ -1,4 +1,5 @@
 
+
 const addManager = function (manager) {
     return `
     <div class="row small-up-1 medium-up-2 large-up-3">
@@ -15,7 +16,7 @@ const addManager = function (manager) {
       </div>
           </div>
               </div>
-    `;
+    `
 }
 
 
@@ -101,7 +102,7 @@ GenerateHTML = (data) => {
     return generateTeam;
 
 }
-// CHECK BELOW FOR STACKPATH + CLOUDFLARE + GOODLEAPIS 
+
 
 const generatePage = function (employeeCards) {   
   return`

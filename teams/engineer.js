@@ -5,7 +5,7 @@ class engineer extends employee {
       super(name,id,email);
       this.github = github;
     }
-}
+
 
 GitHandle () {
     return this.github;
@@ -13,7 +13,8 @@ GitHandle () {
 
 getRole() { 
     return 'Engineer'
-
 }
 
-module.exports = Engineer;
+};
+
+module.exports = engineer;
