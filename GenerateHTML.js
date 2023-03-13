@@ -100,7 +100,7 @@ GenerateHTML = (data) => {
     const employeeCards = page.join('')
 
     const teamwork = generatePage(employeeCards); 
-    return generateTeam;
+    return teamwork;
 
 }
 
