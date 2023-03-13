@@ -46,7 +46,7 @@ const manage = () => {
 
 
     .then(manager => {
-    const {name,id,email,office} = Manager
+    const {name,id,email,office} = manager
     const TheManager = new Manager (name, id, email , office)
     team.push(TheManager);
     console.log(TheManager);
@@ -61,14 +61,14 @@ const TheEmployee = () => {
 return inquirer.prompt ([
     {
         type:'list',
-        name:'role',
+        name:'position',
         message:'Please choose your employees role',
         choices: ['engineer',"intern"]
     },
     {
         type:'input',
         name:'name',
-        message:'employee name, please.'
+        message:'employee, name, please.'
     },
     {
         type:'input',
@@ -88,12 +88,12 @@ return inquirer.prompt ([
     },
     {
         type:'input',
-        name:'school',
+        name:'university',
         message:'input intern\'s university'
     },
     {
         type:'confirm',
-        name:'confirmTheEmployee',
+        name:'confirmAddEmployee',
         message:'Add more team players?',
         default: false
     },
@@ -107,7 +107,7 @@ return inquirer.prompt ([
         employee = new engineer (name,id,email,github);
         console.log(employee);
     } else if (position === 'intern') {
-        employee = new intern (name,id,email,school);
+        employee = new intern (name,id,email,university);
         console.log(employee);
     }
     team.push(employee);

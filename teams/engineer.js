@@ -11,7 +11,7 @@ GitHandle () {
     return this.github;
 }
 
-getRole() { 
+getPosition() { 
     return 'Engineer'
 }
 
