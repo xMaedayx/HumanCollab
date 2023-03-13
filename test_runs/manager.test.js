@@ -1,5 +1,5 @@
 
-const Manager = require('../teams/manager');
+const Manager = require('../teams/Manager');
 
 
 test('creates an Manager object', () => {

@@ -17,8 +17,8 @@ class all {
         return this.email;
 
     }
-    getRole() {
-        return 'Employee';
+    getPosition() {
+        return 'all';
 
     }
 };

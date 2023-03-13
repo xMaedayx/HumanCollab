@@ -1,5 +1,6 @@
 
 
+
 const addManager = function (manager) {
     return `
     <div class="row small-up-1 medium-up-2 large-up-3">

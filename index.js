@@ -4,8 +4,9 @@ const fs = require('fs');
 const GenerateHTML = require('./GenerateHTML')
 
 const engineer = require('./teams/engineer');
-const manager = require('./teams/manager');
+const Manager = require('./teams/Manager');
 const intern = require('./teams/intern');
+
 
 const team = []
 
@@ -45,8 +46,8 @@ const manage = () => {
 
 
     .then(manager => {
-    const {name,id,email,office} = manager
-    const TheManager = new manager (name, id, email , office)
+    const {name,id,email,office} = Manager
+    const TheManager = new Manager (name, id, email , office)
     team.push(TheManager);
     console.log(TheManager);
 })
