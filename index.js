@@ -50,10 +50,12 @@ const manage = () => {
     const TheManager = new Manager (name, id, email, office)
     team.push(TheManager);
     console.log(TheManager);
+    return TheEmployee(team);
+    
 })
 };
 
-const TheEmployee = () => {
+const TheEmployee = (team) => {
     console.log('input employees');
 
 
@@ -95,7 +97,7 @@ return inquirer.prompt ([
         type:'confirm',
         name:'confirmAddEmployee',
         message:'Add more team players?',
-        default: false
+        default: false,
     },
 ])
 
@@ -126,7 +128,7 @@ const writeFile = data => {
         if (err) {
             console.log(err);
             return;
-        // when the profile has been created 
+       
         } else {
             console.log("Your team profile has been generated! Please see the new .html file")
         }
