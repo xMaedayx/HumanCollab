@@ -47,7 +47,7 @@ const manage = () => {
 
     .then(manager => {
     const {name,id,email,office} = manager
-    const TheManager = new Manager (name, id, email , office)
+    const TheManager = new Manager (name, id, email, office)
     team.push(TheManager);
     console.log(TheManager);
 })
@@ -101,6 +101,7 @@ return inquirer.prompt ([
 
 .then(dataOnEmployees => {
     let {name,id,email,position,github,university,confirmAddEmployee} = dataOnEmployees;
+    
     let employee;
 
     if (position === 'engineer') {
@@ -120,24 +121,27 @@ return inquirer.prompt ([
 };
 
 const writeFile = data => {
-    fs.writeFile('./index.html',data,err => {
-    if (err){
-        console.log(err);
-        return;
-    } else {
-        console.log('Generated team profile! refernce your new index.html. ');
-    }
-})
+    fs.writeFile('./NewGenerated.html', data, err => {
+       
+        if (err) {
+            console.log(err);
+            return;
+        // when the profile has been created 
+        } else {
+            console.log("Your team profile has been generated! Please see the new .html file")
+        }
+    })
+}; 
 
-};
+
 
 manage()
 .then(TheEmployee)
 .then(team => {
     return GenerateHTML(team);
 })
-.then(pageHTML => {
-    return writeFile(pageHTML);
+.then(newHTML => {
+    return writeFile(newHTML);
 })
 .catch(err => {
     console.log(err);
