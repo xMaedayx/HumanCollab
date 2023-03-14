@@ -97,7 +97,7 @@ return inquirer.prompt ([
         type:'confirm',
         name:'confirmAddEmployee',
         message:'Add more team players?',
-        default: false,
+        default: false
     },
 ])
 
@@ -138,7 +138,7 @@ const writeFile = data => {
 
 
 manage()
-.then(TheEmployee)
+
 .then(team => {
     return GenerateHTML(team);
 })
