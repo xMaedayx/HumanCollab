@@ -1,18 +1,18 @@
 const employee = require('./all')
 
 class intern extends employee {
-    constructor(name,id,email,school) {
+    constructor(name,id,email,university) {
         super(name,id,email);
-        this.school = school;
+        this.university = university;
     }
 
 
-University() {
-    return this.school;
+university() {
+    return this.university;
 }
 
-Position() {
-    return "intern";
+getPosition() {
+    return "Intern";
 }
 };
 

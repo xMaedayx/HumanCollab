@@ -3,23 +3,7 @@
 
 const addManager = function (manager) {
     return `
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>TeamPage</title>
-        <link rel="stylesheet" href="./style.css" />
-        <link rel="stylesheet" href="./foundation.css">
-        
-      </head>
-      <body>
-        <header>
-            <nav class="is-active" id="is-active">
-                <span class="is-active" id="navigation-text">Team Profile</span>
-            </nav>
-        </header>
+     
     <div class="row small-up-1 medium-up-2 large-up-3">
         <div class="column" style="flex: 0 0 auto;">
             <div class="card"> 
@@ -71,7 +55,7 @@ const addIntern = function (intern) {
                 <div class="card-body">
                   <p class="id">ID: ${intern.id}</p>
                   <p class="email">Email:<a href="mailto:${intern.email}">${intern.email}</a></p>
-                  <p class="school">School: ${intern.universityl}</p>
+                  <p class="school">University: ${intern.universityl}</p>
     </div>
         </div>
             </div>
@@ -123,7 +107,7 @@ GenerateHTML = (data) => {
 
 
 const generatePage = function (employeeCards) {   
-  return`
+  return `
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -148,6 +132,12 @@ const generatePage = function (employeeCards) {
       </main>
       
   </body>
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
+
+    <!-- Compressed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+
 
   </html>
 

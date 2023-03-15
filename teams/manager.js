@@ -8,8 +8,8 @@ class Manager extends employee {
         this.office = office; 
     }
 
-    Position () {
-        return "manager";
+    getPosition () {
+        return "Manager";
     }
 }
 
