@@ -110,7 +110,7 @@ return inquirer.prompt ([
         employee = new engineer (name,id,email,github);
         console.log(employee);
     } else if (position === 'intern') {
-        employee = new intern (name,id,email,university);
+        employee = new intern (name,id,github,email,university);
         console.log(employee);
     }
     team.push(employee);

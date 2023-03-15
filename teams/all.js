@@ -1,5 +1,5 @@
 class all { 
-    constructor(name,id,email) {
+    constructor(name,id,github,email) {
         this.name = name; 
         this.id = id;
         this.email = email;
@@ -11,6 +11,10 @@ class all {
 
     getId() {
         return this.id;
+    }
+    
+    github() {
+        return this.github;
     }
 
     getEmail() {

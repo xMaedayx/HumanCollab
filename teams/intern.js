@@ -7,6 +7,11 @@ class intern extends employee {
     }
 
 
+github() {
+        return this.github;
+    }
+    
+
 university() {
     return this.university;
 }

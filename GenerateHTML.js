@@ -55,7 +55,7 @@ const addIntern = function (intern) {
                 <div class="card-body">
                   <p class="id">ID: ${intern.id}</p>
                   <p class="email">Email:<a href="mailto:${intern.email}">${intern.email}</a></p>
-                  <p class="school">University: ${intern.universityl}</p>
+                  <p class="school"> University: ${intern.university}</p>
     </div>
         </div>
             </div>

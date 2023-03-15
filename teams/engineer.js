@@ -7,7 +7,7 @@ class engineer extends employee {
     }
 
 
-GitHandle () {
+github() {
     return this.github;
 }
 
